@@ -74,8 +74,10 @@ public sealed class GameService : IGameService
             .Include(z => z.Moves)
             .FirstOrDefaultAsync(z => z.Id == gameId, cancellationToken);
         if (game == null) throw new GameNotFoundException(gameId);
-
+        if (game.IsFinished)
+            throw new GameAlreadyFinishedException(game.Id);
         if (player != game.CurrentTurn) throw new NotYourTurnException(game.CurrentTurn);
+        
         var opponent = game.FirstPlayer == game.CurrentTurn ? game.SecondPlayer : game.FirstPlayer;
         var move = _moveFactory.CreateMove(game.Moves.Count, game.Id, y, x, player, opponent);
         var eTag = _etagFactory.GetEtag(move);
@@ -85,9 +87,13 @@ public sealed class GameService : IGameService
         var result = board.Move(move.Y, move.X, move);
         game.IsFinished = result.IsGameEnd;
         game.WhoWon = result.IsWonMove ? move.Player : null;
+        game.CurrentTurn = opponent;
         await _context.AddAsync(move, cancellationToken);
         await _context.SaveChangesAsync(cancellationToken);
         await transaction.CommitAsync(cancellationToken);
+        if (result.Value != null)
+            result.Value.Id = move.Id;
+        
         return (result, eTag);
     }
 

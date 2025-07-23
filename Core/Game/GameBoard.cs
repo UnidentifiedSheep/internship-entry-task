@@ -3,6 +3,7 @@ using Core.Entities;
 using Core.Enums;
 using Core.Exceptions.Game;
 using Core.Extensions;
+using Core.Mappers;
 using Core.Models;
 
 namespace Core.Game;
@@ -16,6 +17,33 @@ public sealed class GameBoard
     {
         _moves = ConvertMovesToDictionary(moves);
         _gameSettings = gameSettings;
+    }
+
+    public static char[][] GetAsBoard(IEnumerable<Move> moves, string firstPlayerName, char firstPlayerSymbol, 
+        string secondPlayerName, char secondPlayerSymbol, int boardSize)
+    {
+        var movesList = moves.ToList();
+        if (movesList.Count == 0) return [];
+        if (boardSize < 3)
+            throw new ArgumentOutOfRangeException(nameof(boardSize), boardSize, "Размер доски должен быть больше 3");
+        char[][] result = new char[boardSize][];
+        for (int i = 0; i < boardSize; i++)
+            result[i] = new char[boardSize];
+        
+        foreach (var move in movesList)
+        {
+            var row = move.Y;
+            var column = move.X;
+            if (firstPlayerName == move.Player)
+                result[row][column] = firstPlayerSymbol;
+            else 
+                result[row][column] = secondPlayerSymbol;
+        }
+        for (int i = 0; i < boardSize; i++)
+            for (int j = 0; j < boardSize; j++)
+                if (result[i][j]== '\0')
+                    result[i][j] = ' ';
+        return result;
     }
 
     public static GameBoard Create(IEnumerable<Move> moves, GameSettings settings) =>
@@ -35,7 +63,7 @@ public sealed class GameBoard
 
         var (isWin, isGameEnd) = IsWinOrGameEnd(row, column, move.Player);
 
-        return new MoveResult(move, isWin, isGameEnd);
+        return new MoveResult(move.MapToDto(), isWin, isGameEnd);
     }
 
     private readonly Direction[] _directions =

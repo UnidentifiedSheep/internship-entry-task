@@ -14,7 +14,7 @@ public static class DependencyInjection
     {
         services.AddScoped<IGameService, GameService>();
         services.AddSingleton<RandomizerBase, SystemRandomizer>();
-        
+        //Db
         services.AddDbContext<DContext>(options => options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
         
         return services;

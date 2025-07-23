@@ -1,4 +1,5 @@
 using Core.Dtos;
+using Core.Game;
 
 namespace Core.Mappers;
 
@@ -22,6 +23,9 @@ public static class GameMapper
             Etag = game.Etag,
             Moves = MapToDto(game.Moves).ToList()
         };
+        if (showAsBoard)
+            gameDto.Board = GameBoard.GetAsBoard(game.Moves, gameDto.FirstPlayer, gameDto.FirstPlayerSymbol, 
+                gameDto.SecondPlayer, gameDto.SecondPlayerSymbol, gameDto.BoardSize);
         return gameDto;
     }
 
