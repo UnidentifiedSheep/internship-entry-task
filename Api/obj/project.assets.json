@@ -1903,11 +1903,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/owl/Documents/RiderProjects/ internship-entry-task/Api/Api.csproj",
+      "projectUniqueName": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Api/Api.csproj",
       "projectName": "Api",
-      "projectPath": "/home/owl/Documents/RiderProjects/ internship-entry-task/Api/Api.csproj",
+      "projectPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Api/Api.csproj",
       "packagesPath": "/home/owl/.nuget/packages/",
-      "outputPath": "/home/owl/Documents/RiderProjects/ internship-entry-task/Api/obj/",
+      "outputPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/owl/.nuget/NuGet/NuGet.Config"
@@ -1923,14 +1923,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/home/owl/Documents/RiderProjects/ internship-entry-task/Application/Application.csproj": {
-              "projectPath": "/home/owl/Documents/RiderProjects/ internship-entry-task/Application/Application.csproj"
+            "/home/owl/Documents/RiderProjects/internship-entry-taskd/Application/Application.csproj": {
+              "projectPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Application/Application.csproj"
             },
-            "/home/owl/Documents/RiderProjects/ internship-entry-task/Core/Core.csproj": {
-              "projectPath": "/home/owl/Documents/RiderProjects/ internship-entry-task/Core/Core.csproj"
+            "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/Core.csproj": {
+              "projectPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/Core.csproj"
             },
-            "/home/owl/Documents/RiderProjects/ internship-entry-task/Infrastructure/Infrastructure.csproj": {
-              "projectPath": "/home/owl/Documents/RiderProjects/ internship-entry-task/Infrastructure/Infrastructure.csproj"
+            "/home/owl/Documents/RiderProjects/internship-entry-taskd/Infrastructure/Infrastructure.csproj": {
+              "projectPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Infrastructure/Infrastructure.csproj"
             }
           }
         }

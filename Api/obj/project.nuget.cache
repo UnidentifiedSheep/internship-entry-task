@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "37PNIid9c2Y=",
+  "dgSpecHash": "TY3Lt/8qAkQ=",
   "success": true,
-  "projectFilePath": "/home/owl/Documents/RiderProjects/ internship-entry-task/Api/Api.csproj",
+  "projectFilePath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Api/Api.csproj",
   "expectedPackageFiles": [
     "/home/owl/.nuget/packages/carter/9.0.0/carter.9.0.0.nupkg.sha512",
     "/home/owl/.nuget/packages/carter.analyzers/9.0.0/carter.analyzers.9.0.0.nupkg.sha512",

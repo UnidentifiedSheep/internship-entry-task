@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/owl/Documents/RiderProjects/ internship-entry-task/Application/Application.csproj",
+      "projectUniqueName": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Application/Application.csproj",
       "projectName": "Application",
-      "projectPath": "/home/owl/Documents/RiderProjects/ internship-entry-task/Application/Application.csproj",
+      "projectPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Application/Application.csproj",
       "packagesPath": "/home/owl/.nuget/packages/",
-      "outputPath": "/home/owl/Documents/RiderProjects/ internship-entry-task/Application/obj/",
+      "outputPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/owl/.nuget/NuGet/NuGet.Config"
@@ -52,8 +52,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/home/owl/Documents/RiderProjects/ internship-entry-task/Core/Core.csproj": {
-              "projectPath": "/home/owl/Documents/RiderProjects/ internship-entry-task/Core/Core.csproj"
+            "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/Core.csproj": {
+              "projectPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/Core.csproj"
             }
           }
         }

@@ -12,11 +12,8 @@ builder.Services.AddOpenApi();
 
 //Game config
 builder.Configuration.AddEnvironmentVariables("GAME_");
-var gameSettings = new GameSettings
-{
-    BoardSize = builder.Configuration.GetValue<int>("BOARD_SIZE"),
-    WinLength = builder.Configuration.GetValue<int>("WIN_LENGTH"),
-};
+var gameSettings = new GameSettings(builder.Configuration.GetValue<int>("BOARD_SIZE"), 
+    builder.Configuration.GetValue<int>("WIN_LENGTH"));
 builder.Services.AddSingleton(gameSettings);
 
 builder.Services.AddExceptionHandler<CustomExceptionHandler>();

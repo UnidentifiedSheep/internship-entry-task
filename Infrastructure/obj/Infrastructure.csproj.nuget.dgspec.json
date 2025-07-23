@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/owl/Documents/RiderProjects/ internship-entry-task/Infrastructure/Infrastructure.csproj": {}
+    "/home/owl/Documents/RiderProjects/internship-entry-taskd/Infrastructure/Infrastructure.csproj": {}
   },
   "projects": {
-    "/home/owl/Documents/RiderProjects/ internship-entry-task/Core/Core.csproj": {
+    "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/owl/Documents/RiderProjects/ internship-entry-task/Core/Core.csproj",
+        "projectUniqueName": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/Core.csproj",
         "projectName": "Core",
-        "projectPath": "/home/owl/Documents/RiderProjects/ internship-entry-task/Core/Core.csproj",
+        "projectPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/Core.csproj",
         "packagesPath": "/home/owl/.nuget/packages/",
-        "outputPath": "/home/owl/Documents/RiderProjects/ internship-entry-task/Core/obj/",
+        "outputPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/owl/.nuget/NuGet/NuGet.Config"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "/home/owl/Documents/RiderProjects/ internship-entry-task/Infrastructure/Infrastructure.csproj": {
+    "/home/owl/Documents/RiderProjects/internship-entry-taskd/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/owl/Documents/RiderProjects/ internship-entry-task/Infrastructure/Infrastructure.csproj",
+        "projectUniqueName": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "/home/owl/Documents/RiderProjects/ internship-entry-task/Infrastructure/Infrastructure.csproj",
+        "projectPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Infrastructure/Infrastructure.csproj",
         "packagesPath": "/home/owl/.nuget/packages/",
-        "outputPath": "/home/owl/Documents/RiderProjects/ internship-entry-task/Infrastructure/obj/",
+        "outputPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/owl/.nuget/NuGet/NuGet.Config"
@@ -87,8 +87,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/owl/Documents/RiderProjects/ internship-entry-task/Core/Core.csproj": {
-                "projectPath": "/home/owl/Documents/RiderProjects/ internship-entry-task/Core/Core.csproj"
+              "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/Core.csproj": {
+                "projectPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/Core.csproj"
               }
             }
           }

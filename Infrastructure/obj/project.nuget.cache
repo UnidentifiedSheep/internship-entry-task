@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "29pXcef4AjU=",
+  "dgSpecHash": "ebzWOwnFRTw=",
   "success": true,
-  "projectFilePath": "/home/owl/Documents/RiderProjects/ internship-entry-task/Infrastructure/Infrastructure.csproj",
+  "projectFilePath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [
     "/home/owl/.nuget/packages/microsoft.entityframeworkcore/9.0.1/microsoft.entityframeworkcore.9.0.1.nupkg.sha512",
     "/home/owl/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.1/microsoft.entityframeworkcore.abstractions.9.0.1.nupkg.sha512",

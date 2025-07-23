@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/owl/Documents/RiderProjects/ internship-entry-task/Core/Core.csproj": {}
+    "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/Core.csproj": {}
   },
   "projects": {
-    "/home/owl/Documents/RiderProjects/ internship-entry-task/Core/Core.csproj": {
+    "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/owl/Documents/RiderProjects/ internship-entry-task/Core/Core.csproj",
+        "projectUniqueName": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/Core.csproj",
         "projectName": "Core",
-        "projectPath": "/home/owl/Documents/RiderProjects/ internship-entry-task/Core/Core.csproj",
+        "projectPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/Core.csproj",
         "packagesPath": "/home/owl/.nuget/packages/",
-        "outputPath": "/home/owl/Documents/RiderProjects/ internship-entry-task/Core/obj/",
+        "outputPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/owl/.nuget/NuGet/NuGet.Config"
