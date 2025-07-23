@@ -234,6 +234,9 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
+              "/home/owl/Documents/RiderProjects/internship-entry-taskd/Application/Application.csproj": {
+                "projectPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Application/Application.csproj"
+              },
               "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/Core.csproj": {
                 "projectPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/Core.csproj"
               }

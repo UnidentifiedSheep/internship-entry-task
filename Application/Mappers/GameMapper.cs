@@ -1,11 +1,11 @@
+using Application.Game;
 using Core.Dtos;
-using Core.Game;
 
-namespace Core.Mappers;
+namespace Application.Mappers;
 
 public static class GameMapper
 {
-    public static GameDto MapToDto(this Entities.Game game, bool showAsBoard = false)
+    public static GameDto MapToDto(this Core.Entities.Game game, bool showAsBoard = false)
     {
         var gameDto = new GameDto
         {
@@ -29,7 +29,7 @@ public static class GameMapper
         return gameDto;
     }
 
-    public static MoveDto MapToDto(this Entities.Move move)
+    public static MoveDto MapToDto(this Core.Entities.Move move)
     {
         return new MoveDto
         {
@@ -40,6 +40,6 @@ public static class GameMapper
         };
     }
 
-    public static IEnumerable<MoveDto> MapToDto(this IEnumerable<Entities.Move> moves) => moves.Select(MapToDto);
+    public static IEnumerable<MoveDto> MapToDto(this IEnumerable<Core.Entities.Move> moves) => moves.Select(MapToDto);
     
 }

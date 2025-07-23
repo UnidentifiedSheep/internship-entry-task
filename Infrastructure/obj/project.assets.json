@@ -265,6 +265,19 @@
           }
         }
       },
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        }
+      },
       "Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -688,6 +701,11 @@
         "postgresql.png"
       ]
     },
+    "Application/1.0.0": {
+      "type": "project",
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
+    },
     "Core/1.0.0": {
       "type": "project",
       "path": "../Core/Core.csproj",
@@ -696,6 +714,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Application >= 1.0.0",
       "Core >= 1.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4"
     ]
@@ -726,6 +745,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "/home/owl/Documents/RiderProjects/internship-entry-taskd/Application/Application.csproj": {
+              "projectPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Application/Application.csproj"
+            },
             "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/Core.csproj": {
               "projectPath": "/home/owl/Documents/RiderProjects/internship-entry-taskd/Core/Core.csproj"
             }

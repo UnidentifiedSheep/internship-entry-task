@@ -1,12 +1,12 @@
+using Application.Mappers;
 using Core.Configuration;
 using Core.Entities;
 using Core.Enums;
 using Core.Exceptions.Game;
 using Core.Extensions;
-using Core.Mappers;
 using Core.Models;
 
-namespace Core.Game;
+namespace Application.Game;
 
 public sealed class GameBoard
 {

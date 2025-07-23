@@ -1,7 +1,7 @@
+using Application.Mappers;
 using Carter;
 using Core.Dtos;
 using Core.Interfaces;
-using Core.Mappers;
 
 namespace Api.EndPoints.Game;
 

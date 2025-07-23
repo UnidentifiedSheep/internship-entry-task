@@ -1,8 +1,8 @@
+using Application.Game;
 using Core.Configuration;
 using Core.Entities;
 using Core.Enums;
 using Core.Exceptions.Game;
-using Core.Game;
 
 namespace Tests.Unit;
 
